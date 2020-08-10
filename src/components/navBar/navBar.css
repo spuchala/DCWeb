@@ -1,0 +1,6 @@
+.title {
+  flex: 1;
+}
+.toolBar {
+  min-height: 50px;
+}
