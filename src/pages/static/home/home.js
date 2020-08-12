@@ -1,75 +1,48 @@
-import React, { useState, useEffect } from "react";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import withWidth from "@material-ui/core/withWidth";
+import React, { Fragment } from "react";
+import Grid from "@material-ui/core/Grid";
 
-import sliderImagesConfig from "../../../config/sliderImagesConfig";
 import "./home.css";
+import Slider from "../../../components/slider/slider";
+import CustomCard from "../../../components/customCard/customCard";
+import PublicIcon from "@material-ui/icons/Public";
+import AccessAlarmIcon from "@material-ui/icons/AccessAlarm";
+import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
 
 const Home = () => {
-  const [activeBgImageIndex, setActiveBgImageIndex] = useState(0);
-
-  useEffect(() => {
-    const bgImageInterval = setInterval(() => {
-      setActiveBgImageIndex(
-        activeBgImageIndex === sliderImagesConfig.length - 1
-          ? 0
-          : activeBgImageIndex + 1
-      );
-    }, 3000);
-    return () => clearInterval(bgImageInterval);
-  }, [activeBgImageIndex]);
-
-  const activeBgImageConfig = sliderImagesConfig[activeBgImageIndex];
-  const { image, textOnBackGroundColor, color, title } = activeBgImageConfig;
-
   return (
-    <div className="sliderContainer">
-      <div
-        style={{
-          backgroundImage: `url(${image})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          width: "100%",
-          height: "300px",
-        }}
-      >
-        {!textOnBackGroundColor && (
-          <div>
-            <p>
-              <br />
-            </p>
-            <p>
-              <br />
-            </p>
-            <Typography
-              variant="h4"
-              className={color === "white" ? "headingWhite" : "headingBlack"}
-            >
-              {title}
-            </Typography>
-          </div>
-        )}
-        {textOnBackGroundColor && (
-          <div style={{ textAlign: "center" }}>
-            <p>
-              <br />
-            </p>
-            <p>
-              <br />
-            </p>
-            <div className="knowMoreContainer">
-              <div className="aboutContainer">
-                <p className="headingWhiteXtraSmall">{title}</p>
-                <Button variant="contained" color="secondary">
-                  Know More
-                </Button>
-              </div>
-            </div>
-          </div>
-        )}
+    <Fragment>
+      <Slider></Slider>
+      <div className="whyUseContainer">
+        <Grid container>
+          <Grid item xs={12}>
+            <p className="headingPinkSmall">Why use GigglesWare</p>
+          </Grid>
+        </Grid>
+        <Grid container className="gridContainer">
+          <Grid item sm={4}>
+            <CustomCard
+              title="One stop destination"
+              description="Use GigglesWare! to fill in and track daily reports sheets for daily attendance, activities like naps, foods, pottys and other infant/kid activities."
+              icon={<PublicIcon color="secondary" fontSize="large" />}
+            />
+          </Grid>
+          <Grid item sm={4}>
+            <CustomCard
+              title="Saves you time"
+              description="With GigglesWare! you eliminate paper by tracking reports/sheets and analyzing them through graphs and charts so you concentrate on important things i.e.Kids"
+              icon={<AccessAlarmIcon color="secondary" fontSize="large" />}
+            />
+          </Grid>
+          <Grid item sm={4}>
+            <CustomCard
+              title="Report almost anything"
+              description="Report any kind of activity like attendance, naps, foods etc. We are working hard on gathering and will be coming up with new reports, charts on a constant basis."
+              icon={<LibraryBooksIcon color="secondary" fontSize="large" />}
+            />
+          </Grid>
+        </Grid>
       </div>
-    </div>
+    </Fragment>
   );
 };
-export default withWidth()(Home);
+export default Home;

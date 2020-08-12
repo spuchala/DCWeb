@@ -2,13 +2,16 @@
   margin-top: 50px;
 }
 .headingWhite {
-  font-size: 2.75em;
+  font-family: bogle, Gill Sans, Arial, sans-serif;
+  font-size: 4.75em;
+  font-weight: 100;
   line-height: 1.1;
   color: white;
 }
 .headingBlack {
-  font-size: 2.75em;
+  font-size: 1.75em;
   line-height: 1.1;
+  font-weight: 100;
   color: black;
 }
 .headingBlackSmall {
@@ -34,4 +37,13 @@
 }
 .center {
   text-align: center;
+}
+.headingPinkSmall {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "wf_SegoeUI", "Segoe UI", "Segoe", "Segoe WP", "Tahoma",
+    "Verdana", "Arial", "sans-serif";
+  font-weight: 200;
+  font-size: 30px;
+  color: #cb2c90;
 }

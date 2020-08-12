@@ -20,7 +20,7 @@ const NavBar = (props) => {
   };
 
   const isSmallScreen = () => {
-    return width === "sm" || width === "md";
+    return width === "sm" || width === "md" || width === "xs";
   };
 
   return (
@@ -28,7 +28,7 @@ const NavBar = (props) => {
       <AppBar>
         <Toolbar style={{ minHeight: 50 }}>
           <Typography className="title">GigglesWare</Typography>
-          {isSmallScreen() ? (
+          {!isSmallScreen() ? (
             <div>
               <Button color="inherit">Kids</Button>
               <Button color="inherit">Classes</Button>
