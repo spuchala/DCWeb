@@ -7,6 +7,8 @@ import CustomCard from "../../../components/customCard/customCard";
 import PublicIcon from "@material-ui/icons/Public";
 import AccessAlarmIcon from "@material-ui/icons/AccessAlarm";
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
+import Button from "@material-ui/core/Button";
+import MobileSlider from "../../../components/mobileSlider/mobileSlider";
 
 const Home = () => {
   return (
@@ -41,6 +43,51 @@ const Home = () => {
             />
           </Grid>
         </Grid>
+      </div>
+      <div className="sectionDark">
+        <div className="dayCareParentContainer">
+          <span className="headingWhiteSmall">For Family DayCare</span>
+          <p className="headingWhiteXtraSmall">
+            Register your family day care with us one time. Add any number of
+            kids to the day care. Manage their reports and daily sheets for all
+            daily activities. Moniter the kids attendance. Search and analyze
+            the reports for improvements.
+          </p>
+          <Button variant="contained" color="secondary">
+            Register as Family Daycare
+          </Button>
+        </div>
+      </div>
+      <div className="sectionGrey">
+        {" "}
+        <div className="dayCareParentContainer">
+          <span className="headingPinkSmall">For Parents</span>
+          <p className="headingBlackXtraSmall">
+            As a Parent, search for your email provided to the day care and
+            create an account with us for one time. You will be able to access
+            your kids daily reports, activities sheets and other information.
+            Emails about the same will be send at the end of the day.
+          </p>
+          <Button variant="contained" color="secondary">
+            Register as Parent
+          </Button>
+        </div>
+      </div>
+      <div className="aboutSectionWhite">
+        <span className="headingPinkSmall">Desktop not enough?</span>
+        <br />
+        <br />
+        <span className="headingBlackXtraSmall">
+          What better way to access GigglesWare on the run than using our Mobile
+          Apps!
+          <br />
+          <span className="headingBlackXtraSmall">
+            Check Out out Android App and Apple iPhone App
+          </span>
+        </span>
+        <br />
+        <br />
+        <MobileSlider />
       </div>
     </Fragment>
   );

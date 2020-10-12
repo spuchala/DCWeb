@@ -20,12 +20,15 @@
   color: black;
 }
 .headingBlackXtraSmall {
-  font-size: 1.15em;
+  font-size: 1em;
   line-height: 1.1;
+  font-weight: 400;
+  font-family: "Roboto";
+  line-height: 1.375em;
   color: black;
 }
 .headingWhiteXtraSmall {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.1;
   font-weight: 100;
   font-family: "Roboto";
@@ -46,4 +49,28 @@
   font-weight: 200;
   font-size: 30px;
   color: #cb2c90;
+}
+.sectionDark {
+  background-color: #555;
+  padding: 40px 0px;
+  text-align: center;
+}
+.sectionGrey {
+  background-color: #f0f0f0;
+  padding: 40px 0px;
+  text-align: center;
+}
+.aboutSectionWhite {
+  background: white none repeat scroll 0 0;
+  padding: 4% 0;
+  text-align: center;
+}
+.headingWhiteSmall {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "wf_SegoeUI", "Segoe UI", "Segoe", "Segoe WP", "Tahoma",
+    "Verdana", "Arial", "sans-serif";
+  font-weight: 200;
+  font-size: 30px;
+  color: white;
 }

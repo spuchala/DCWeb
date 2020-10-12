@@ -1,7 +1,12 @@
 .whyUseContainer {
   text-align: center;
+  margin-bottom: 40px;
 }
 .gridContainer {
   border-left: 10px;
   border-right: 10px;
+}
+.dayCareParentContainer {
+  margin-right: 10px;
+  margin-left: 10px;
 }
