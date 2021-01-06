@@ -1,60 +1,50 @@
-import mainImage from "../assets/images/Main.png";
-import profileImage from "../assets/images/Profile.png";
-import alexaImage from "../assets/images/Alexa.png";
-import customReportImage from "../assets/images/CustomReport.png";
-import instantLogImage from "../assets/images/InstantLog.png";
+import iPhone1 from "../assets/images/iPhone1.png";
+import iPhone2 from "../assets/images/iPhone2.png";
+import iPhone3 from "../assets/images/iPhone3.png";
+import iPhone4 from "../assets/images/iPhone4.png";
+import android1 from "../assets/images/img1.png";
+import android2 from "../assets/images/img2.png";
+import android3 from "../assets/images/img3.png";
+import android4 from "../assets/images/img4.png";
+import android5 from "../assets/images/img5.png";
 
-const sliderImagesConfig = [
+const mobileSliderImagesConfig = [
   {
     id: 0,
-    image: mainImage,
-    title: "One stop solution for Family Day Care Management",
-    show: false,
-    color: "white",
-    textOnBackGroundColor: false,
+    image: iPhone1,
   },
   {
     id: 1,
-    image: profileImage,
-    title: "Get a free public facing website to promote and share your daycare",
-    show: false,
-    color: "black",
-    knowMore: "features/dvProfile",
-    knowMoreText: "Know More",
-    textOnBackGroundColor: true,
+    image: iPhone2,
   },
   {
     id: 2,
-    image: alexaImage,
-    title:
-      "Alexa + GigglesWare = Handsfree assistant to log kids activities with commands and ask Alexa for kids reports",
-    show: false,
-    color: "black",
-    knowMore: "features/dvAlexa",
-    knowMoreText: "Know More",
-    textOnBackGroundColor: true,
+    image: iPhone3,
   },
   {
     id: 3,
-    image: customReportImage,
-    title: "Create Custom Reports for Kids Now",
-    show: false,
-    color: "black",
-    knowMore: "features/dvCustomReport",
-    knowMoreText: "Know More",
-    textOnBackGroundColor: false,
+    image: iPhone4,
   },
   {
-    id: 4,
-    image: instantLogImage,
-    title:
-      "Now you can instantly log or report kids activities using Instant Log feature",
-    show: false,
-    color: "black",
-    knowMore: "features/dvInstantLog",
-    knowMoreText: "Know More",
-    textOnBackGroundColor: true,
+    id: 5,
+    image: android1,
+  },
+  {
+    id: 6,
+    image: android2,
+  },
+  {
+    id: 7,
+    image: android3,
+  },
+  {
+    id: 8,
+    image: android4,
+  },
+  {
+    id: 9,
+    image: android5,
   },
 ];
 
-export default sliderImagesConfig;
+export default mobileSliderImagesConfig;
